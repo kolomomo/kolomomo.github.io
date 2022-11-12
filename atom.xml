@@ -6,7 +6,7 @@
   <link href="https://kolomomo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kolomomo.github.io/"/>
-  <updated>2022-11-07T11:13:58.993Z</updated>
+  <updated>2022-11-12T15:33:31.623Z</updated>
   <id>https://kolomomo.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://kolomomo.github.io/2022/11/09/hello-world/"/>
-    <id>https://kolomomo.github.io/2022/11/09/hello-world/</id>
-    <published>2022-11-09T07:48:26.857Z</published>
-    <updated>2022-11-07T11:13:58.993Z</updated>
+    <title>2022国庆川西游</title>
+    <link href="https://kolomomo.github.io/2022/11/12/travel202210/"/>
+    <id>https://kolomomo.github.io/2022/11/12/travel202210/</id>
+    <published>2022-11-12T11:33:02.000Z</published>
+    <updated>2022-11-12T15:33:31.623Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="旅行" scheme="https://kolomomo.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>blog搭建流程</title>
+    <link href="https://kolomomo.github.io/2022/11/12/20221112/"/>
+    <id>https://kolomomo.github.io/2022/11/12/20221112/</id>
+    <published>2022-11-12T07:33:42.000Z</published>
+    <updated>2022-11-12T11:31:18.512Z</updated>
     
     
       
