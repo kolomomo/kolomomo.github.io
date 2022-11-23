@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计划表</title>
+    <url>/2022/11/23/schedule/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="2022年度"><a href="#2022年度" class="headerlink" title="2022年度"></a>2022年度</h2><pre class="mermaid">
+gantt
+    section 学习
+    高数复习:active,    des1,  2022-11-22, 7d
+    JAVA核心基础   :active,  des2,  2022-11-24,  40d
+    线性代数复习:         des3,  after des1,  7d
+    最优化理论基础:active         des4,  2022-11-24,  30d
+
+    section 工作-专利
+    专利1-阅读文献:crit,  active,  2022-11-24, 15d
+    专利1-背景:crit,  4d
+    专利1-发明内容:crit,  20d
+    专利1-初稿:milestone,  2023-01-01,  0d
+    
+    section 工作-广州机场
+    任务1-停场过夜分配上线:active,  a1,  2022-11-1,  60d
+    任务2-机位调整数量比较:active, a2, 2022-11-25, 14d
+    任务3-靠桥率变化比较:active, a3, 2022-11-26, 16d
+  
+</pre>
+
+]]></content>
+      <tags>
+        <tag>生活</tag>
+        <tag>个人</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2022国庆川西游</title>
     <url>/2022/11/12/travel202210/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="行程"><a href="#行程" class="headerlink" title="行程"></a>行程</h2><h3 id="新津-康定情歌广场"><a href="#新津-康定情歌广场" class="headerlink" title="新津-康定情歌广场"></a>新津-康定情歌广场</h3><p>10月1日在新津吃了顿老字号的<a href="https://surl.amap.com/kZm9iQul2w3">爆花汤锅</a>，晚上开始出发。</p>
