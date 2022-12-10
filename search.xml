@@ -1,33 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>计划表</title>
-    <url>/2022/11/23/schedule/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="2022年度"><a href="#2022年度" class="headerlink" title="2022年度"></a>2022年度</h2><pre class="mermaid">
-gantt
-    section 学习
-    高数复习:active,    des1,  2022-11-22, 7d
-    JAVA核心基础   :active,  des2,  2022-11-24,  40d
-    线性代数复习:         des3,  after des1,  7d
-    最优化理论基础:active         des4,  2022-11-24,  30d
-
-    section 工作-专利
-    专利1-阅读文献:crit,  active,  2022-11-24, 15d
-    专利1-背景:crit,  4d
-    专利1-发明内容:crit,  20d
-    专利1-初稿:milestone,  2023-01-01,  0d
-    
-    section 工作-广州机场
-    任务1-停场过夜分配上线:active,  a1,  2022-11-1,  60d
-    任务2-机位调整数量比较:active, a2, 2022-11-25, 14d
-    任务3-靠桥率变化比较:active, a3, 2022-11-26, 16d
-  
-</pre>
-
+    <title>高等数学基础整理</title>
+    <url>/2022/11/23/math-note/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-极限"><a href="#1-极限" class="headerlink" title="1. 极限"></a>1. 极限</h2><p>等价无穷小: </p>
+<p>​    当 $x \to 0$ 时，$ sinx \sim x$</p>
+<p>​    当 $x \to 0$ 时，$ tanx \sim x$</p>
+<p>​    当 $x \to 0$ 时，$ 1-cosx \sim \frac{x^2}{2}$</p>
+<p>两个重要极限：</p>
+<p>​    $$\lim_{x \to 0} \frac{sinx}{x} = 1$$</p>
+<p>​    $$\lim_{x \to \infty} (1 + \frac{1}{x})^x = e$$</p>
+<h2 id="2-导数的定义"><a href="#2-导数的定义" class="headerlink" title="2.导数的定义"></a>2.导数的定义</h2><p>导数和微分的概念:</p>
+<p>$$ f’(x_0)=\lim_{\Delta x \to 0}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}} $$</p>
+<p>或者：</p>
+<p> $$ f’(x_0)=\lim_{\Delta x \to x_0}{\frac{f(x) - f(x_0)}{x - x_0}} $$</p>
+<p>左右导数</p>
+<p>函数 $f(x)$ 在 $x_0$ 处的左、右导数分别定义为：</p>
+<p>左导数：</p>
+<p>$f’_-(x_0) =$</p>
+<p>$\lim_{\Delta x \to x_0^{-}}{\frac{f(x) - f(x_0)}{x - x_0}}，(x = x_0 + \Delta x)$</p>
+<p>右导数：$f’_{+}(x_0)=$</p>
+<p>$\lim_{\Delta x \to 0^+}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}}=\lim_{\Delta x \to x_0^+}{\frac{f(x) - f(x_0)}{x - x_0}}$</p>
+<h2 id="3-函数的可导性与连续性之间的关系"><a href="#3-函数的可导性与连续性之间的关系" class="headerlink" title="3. 函数的可导性与连续性之间的关系"></a>3. 函数的可导性与连续性之间的关系</h2><p><strong>Th1:</strong> 函数 $f(x)$ 在 $x_0$ 可微  $\Leftrightarrow$ $f(x)$在 $x_0$ 处可导</p>
+<p><strong>Th2:</strong> 若函数在 $x_0$ 点处可导，则 $y=f(x)$ 在点 $x_0$ 处连续，反之则不成立。即函数连续不一定可导。</p>
+<p><strong>Th3:</strong> $f’(x_0)$ 存在 $\Leftrightarrow$ $f’<em>{-}(x_0) = f’</em>{+}(x_0)$</p>
+<h2 id="4-平面曲线的切线和法线"><a href="#4-平面曲线的切线和法线" class="headerlink" title="4.平面曲线的切线和法线"></a>4.平面曲线的切线和法线</h2><p>切线方程： $y-y_0=f’(x_0)(x-x_0)$</p>
+<p>法线方程：$y-y_0=-\frac{1}{f’(x_0)}(x-x_0), f’(x_0) \neq 0$</p>
+<h2 id="5-四则运算法则"><a href="#5-四则运算法则" class="headerlink" title="5.四则运算法则"></a>5.四则运算法则</h2><p>设函数 $u=u(x), v=v(x)$ 在点 $x$ 可导，则：</p>
+<p>$(1) (u \pm v)’=u’ \pm v’ ;d(u \pm v)=du \pm dv$</p>
+<p>$(2) (uv)’=uv’+u’v;d(uv)=udv+vdu$</p>
+<p>$(3)(\frac{u}{v})=\frac{u’v-uv’}{v^2}(v \neq 0);d(\frac{u}{v})=\frac{vdu-udv}{v^2}$</p>
+<h2 id="6-基本导数与微分表"><a href="#6-基本导数与微分表" class="headerlink" title="6. 基本导数与微分表"></a>6. 基本导数与微分表</h2><p>(1) $y=c(常数),y’=0,dy=0$</p>
+<p>(2) $y=x^{\alpha}(\alpha为实数)，y’=\alpha x^{\alpha - 1}dx$</p>
+<p>(3) $y=a^x,y’=x^x\ln a,dy=a^x\ln adx;特例: e^x=e^x d(e^x)=e^xdx$</p>
+<p>(4) $u=\log_ax,y’=\frac{1}{x\ln a},dy=\frac{1}{x\ln a}dx;特例:(\ln x)’=\frac{1}{x}d(\ln x)=\frac{1}{x}dx$</p>
+<p>(5) $y=\sin x,y’=\cos x,d(\sin x)=\cos xdx$</p>
+<p>(6) $y=\cos x,y’=-\sin x,d(\cos x)=-\sin xdx$</p>
+<p>(7) $y=\tan x,y’=\frac{1}{\cos^2x}=\sec^2x,d(\tan x)=\sec^2xdx$</p>
+<p>(8) $y=\cot x, y’=-\frac{1}{\sin^2x}=-\csc^2x,d(\cot x)=-\csc^2xdx$</p>
+<p>(9) $y=\sec x,y’=\sec x\tan x,d(\sec x)=\sec x\tan xdx$</p>
+<p>(10) $y=\csc x,y’=-\csc x\cot x,d(\csc x)=-\csc x\cot xdx$</p>
+<p>(11) $y=\arcsin x,y’=\frac{1}{\sqrt{1-x^2}},d(\arcsin x)=\frac{1}{\sqrt{1-x^2}}dx$</p>
+<p>(12) $y=\arccos x,y’=-\frac{1}{\sqrt{1-x^2}},d(\arccos x)=-\frac{1}{\sqrt{1-x^2}}dx$</p>
+<p>(13) $y=\arctan x, y’=\frac{1}{1+x^2},d(\arctan x)=\frac{1}{1+x^2}dx$</p>
+<p>(14) $y=arc \cot x,y’=-\frac{1}{1+x^2},d(arc \cot x)=-\frac{1}{1+x^2}dx$</p>
+<h2 id="7-复合函数，反函数，隐函数以及参数方程所确定的函数的微分法"><a href="#7-复合函数，反函数，隐函数以及参数方程所确定的函数的微分法" class="headerlink" title="7. 复合函数，反函数，隐函数以及参数方程所确定的函数的微分法"></a>7. 复合函数，反函数，隐函数以及参数方程所确定的函数的微分法</h2><p>(1) 反函数的运算法则: 设 $y=f(x)$ 在点 $x$ 的某邻域内单调连续，在点 $x$ 处可导且 $f’(x)\neq 0$，则其反函数在点 $x$ 所对应的 $y$处可导，并且有 $\frac{dy}{dx}=\frac{1}{\frac{dx}{dy}}$</p>
+<p>(2) 复合函数的运算法则:若 $\mu =\varphi(x)$ 在点 $x$可导,而 $y=f(\mu)$ 在对应点 $\mu(\mu=\varphi(x))$可导,则复合函数 $y=f(\varphi(x))$在点 $x$可导,且 $y’=f(\mu)\cdot \varphi’(x)$</p>
+<p>(3) 隐函数导数 $\frac{dy}{dx}$ 的求法一般有三种方法：</p>
+<ol>
+<li>方程两边对 $x$ 求导，要记住 $y$ 是 $x$ 的函数，则 $y$ 的函数是 $x$ 的复合函数.例如，$\frac{1}{y},y^2,\ln y,e^y$ 等均是 $x$ 的复合函数. 对 $x$ 求导应按复合函数连锁法则做.</li>
+<li>公式法.由 $F(x,y)=0$ 知 $\frac{dy}{dx}=-\frac{F’_x(x,y)}{F’_y(x,y)}$,其中，$F’_x(x,y),F’_y(x,y)$ 分别表示 $F(x,y)$ 对 $x$ 和 $y$ 的偏导数.</li>
+<li>利用微分形式不变性</li>
+</ol>
+<h2 id="8-常用高阶导数公式"><a href="#8-常用高阶导数公式" class="headerlink" title="8. 常用高阶导数公式"></a>8. 常用高阶导数公式</h2><p>(1) $(a^x)^{(n)} = a^x \ln ^n a (a&gt;0);(e^x)^{(n)}=e^x$</p>
+<p>(2) $(\sin kx)^{(n)}=k^n\sin (kx+n\cdot \frac{\pi}{2})$</p>
+<p>(3) $(\cos kx)^{(n)}=k^n\cos (kx+n\cdot \frac{\pi}{2})$</p>
+<p>(4) $(x^m)^{(n)}=m(m-1)\cdots(m-n+1)x^{m-n}$</p>
+<p>(5) $(\ln x)^{(n)}=(-1)^{(n-1)}\frac{(n-1)!}{x^n}$</p>
+<p>(6) 莱布尼兹公式：若$u(x),v(x)$ 均 $n$ 阶可导，则 $(uv)^{(n)}=\sum_{i=0}^nc_n^iu^{i}v^{(n-i)}$,其中 $u^{(0)}=u,v^{(0)}=v$</p>
+<h2 id="9-微分中值定理，泰勒公式"><a href="#9-微分中值定理，泰勒公式" class="headerlink" title="9. 微分中值定理，泰勒公式"></a>9. 微分中值定理，泰勒公式</h2><p><strong>Th1:(费马定理)</strong></p>
+<p>若函数$f(x)$满足条件：</p>
+<p>(1) 函数 $f(x)$ 在 $x_0$ 的某邻域内有定义，并且在此邻域内恒有 $f(x) \le f(x_0)$或 $f(x) \ge f(x_0)$</p>
+<p>(2) $f(x)$在 $x_0$ 处可导,则有 $f’(x_0)=0$</p>
+<p> <strong>Th2:(罗尔定理)</strong></p>
+<p>设函数$f(x)$满足条件：</p>
+<p>(1) 在闭区间 $[a,b]$ 上连续；</p>
+<p>(2) 在 $(a,b)$ 内可导；</p>
+<p>(3) $f(a) = f(b)$；</p>
+<p>则在 $(a,b)$ 内存在一个 $\xi$，使 $f’(\xi)=0$ </p>
+<p><strong>Th3: (拉格朗日中值定理)</strong></p>
+<p>设函数 $f(x)$ 满足条件：</p>
+<p>(1) 在 $[a,b]$ 上连续；</p>
+<p>(2) 在$(a,b)$ 内可导；</p>
+<p>则在$(a,b)$内存在一个 $\xi$ ，使 $\frac{f(b)-f(a)}{b-a}=f’(\xi)$ </p>
+<p><strong>Th4: (柯西中值定理)</strong></p>
+<p>设函数$f(x)$，$g(x)$满足条件： </p>
+<p>(1) 在 $[a,b]$ 上连续；</p>
+<p>(2) 在$(a,b)$内可导且$f’(x)$, $g’(x)$均存在，且 $g’(x) \neq 0$</p>
+<p>则在$(a,b)$ 内存在一个 $\xi$，使 $\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f’(\xi)}{g’(\xi)}$</p>
+<h2 id="10-洛必达法则"><a href="#10-洛必达法则" class="headerlink" title="10. 洛必达法则"></a>10. 洛必达法则</h2><p><strong>法则 Ⅰ:</strong> ($ \frac{0}{0}$型)</p>
+<p>设函数 $f(x),g(x)$ 满足条件：</p>
+<p>$$\lim_{x \to x_0}f(x)=0, \lim_{x \to x_0}g(x)=0$$</p>
+<p>$f(x),g(x)$ 在 $x_0$ 的邻域内可导(在 $x_0$ 处可除外)，且 $g’(x) \neq 0$;</p>
+<p>$\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$ 存在(或$\infty$),则：</p>
+<p>$$\lim_{x \to x_0}\frac{f(x)}{g(x)}=\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$$</p>
+<p><strong>法则 Ⅰ‘:</strong> ($ \frac{0}{0}$型)</p>
+<p>设函数 $f(x),g(x)$ 满足条件：</p>
+<p>$$\lim_{x \to \infty}f(x)=0, \lim_{x \to \infty}g(x)=0$$</p>
+<p>存在一个$X&gt;0$，当 $|x| &gt; X$ 时，$f(x),g(x)$ 可导，且 $g’(x) \neq 0$ ;$\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$ 存在(或$\infty$),则：</p>
+<p>$$\lim_{x \to x_0}\frac{f(x)}{g(x)}=\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$$</p>
+<p><strong>法则 Ⅱ:</strong>($\frac{\infty}{\infty}$型)</p>
+<p>设函数 $f(x),g(x)$ 满足条件：</p>
+<p>$$\lim_{x \to x_0}f(x)=\infty, \lim_{x \to x_0}g(x)=\infty$$</p>
+<p>$f(x),g(x)$ 在 $x_0$ 的邻域内可导(在 $x_0$ 处可除外)，且 $g’(x) \neq 0$;</p>
+<p>$\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$ 存在(或$\infty$),则：</p>
+<p>$$\lim_{x \to x_0}\frac{f(x)}{g(x)}=\lim_{x \to x_0}\frac{f’(x)}{g’(x)}$$</p>
+<p>同理<strong>法则 Ⅱ‘</strong>仿<strong>法则 Ⅰ‘</strong>可写出</p>
+<h2 id="11-泰勒公式"><a href="#11-泰勒公式" class="headerlink" title="11. 泰勒公式"></a>11. 泰勒公式</h2><p>设函数 $f(x)$在点 $x_0$ 处的某邻域内具有 $n+1$ 阶导数，则对该邻域内异于 $x_0$ 的任意点 $x$，在 $x_0$ 与 $x$ 之间至少存在一个 $\xi$，使得：</p>
+<p>$$f(x)=f(x_0)+f’(x_0)(x-x_0)+\frac{1}{2!}f’’(x_0)(x-x_0)^2+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)$$</p>
+<p>其中$R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}$,$\xi$ 在 0 与 $x$ 之间.上式被称为麦克劳林公式。</p>
+<p>常用吴总函数在 $x_0=0$ 处的泰勒公式：</p>
+<p>(1) $e^x=1+x+\frac{1}{2!}x^2+\cdots+\frac{1}{n!}x^n+\frac{x^{n+1}}{(n+1)!}e^{\xi}$ 或$=1+x+\frac{1}{2!}x^2+\cdots+\frac{1}{n!}x^n+o(x^n)$</p>
+<p>(2) $\sin x = x - \frac{1}{3!}x^3+\cdots+\frac{x^n}{n!}\sin \frac{n\pi}{2}+\frac{x^{n+1}}{(n+1)!}\sin (\xi + \frac{n+1}{2}\pi)$ 或 $=x - \frac{1}{3!}x^3+\cdots+\frac{x^n}{n!}\sin \frac{n\pi}{2}+o(x^n)$</p>
+<p>(3) $\cos x = 1 - \frac{1}{2!}x^2+\cdots+\frac{x^n}{n!}\cos \frac{n\pi}{2}+\frac{x^{n+1}}{(n+1)!}\cos (\xi + \frac{n+1}{2}\pi)$ 或 $=1 - \frac{1}{2!}x^2+\cdots+\frac{x^n}{n!}\cos \frac{n\pi}{2} + o(x^n)$</p>
+<p>(4) $\ln(1+x) = x - \frac{1}{2}x^2+\frac{1}{3}x^3-\cdots+(-1)^{n-1}\frac{x^n}{n}+\frac{(-1)^n x^{n+1}}{(n+1)(1+\xi)^{n+1}}$ 或 $x - \frac{1}{2}x^2+\frac{1}{3}x^3-\cdots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)$</p>
+<p>(5) $(1+x)^m=1+mx+\frac{m(m-1)}{2!}x^2+\cdots+\frac{m(m-1)\cdots(m-n+1)}{n!}x^n+\frac{m(m-1)\cdots(m-n+1)}{(n+1)!}x^{n+1}(1+\xi)^{m-n-1}$ 或   $=1+mx+\frac{m(m-1)}{2!}x^2+\cdots+\frac{m(m-1)\cdots(m-n+1)}{n!}x^n+o(x^n)$</p>
+<h2 id="12-函数单调性的判断"><a href="#12-函数单调性的判断" class="headerlink" title="12. 函数单调性的判断"></a>12. 函数单调性的判断</h2><p><strong>Th1:</strong></p>
+<p>设函数 $f(x)$在 $(a,b)$ 区间内可导，如果对 $\forall x\in (a,b)$，都有 $f’(x)&gt;0$（或 $f’(x)&lt;0$），则函数 $f(x)$ 在 $(a,b)$ 内是单调增加的（或单调减少）</p>
+<p><strong>Th2:</strong></p>
+<p>（取极值的必要条件）设函数 $f(x)$ 在 $x_0$ 处可导，且在 $x_0$处取极值，则 $f’(x_0)=0$</p>
+<p><strong>Th3:</strong></p>
+<p>（取极值的第一充分条件）设函数 $f(x)$在 $x_0$ 的某一邻域内可微，且 $f’(x)=0$（或 $f(x)$ 在 $x_0$ 处连续，但 $f’(x_0)$ 不存在）</p>
+<p>(1) 若当 $x$ 经过 $x_0$ 时，$f’(x)$ 由“+”变“-”，则 $f(x)$ 为极大值；</p>
+<p>(2) 若当 $x$ 经过 $x_0$ 时，$f’(x)$ 由“-”变“+”，则 $f(x)$ 为极小值；</p>
+<p>(3) 若  $f(x)$ 经过 $x=x_0$ 的两侧不变号，则 $f(x)$ 不是极值。</p>
+<p><strong>Th4:</strong>             [TOCHEACK]</p>
+<p>(取极值的第二充分条件)设 $f(x)$ 在点 $x_0$ 处有  $f’’(x) \neq 0$ ，且  $f’(x)=0$ ，则当 $f’’(x_0)&lt;0$ 时， $f(x_0)$ 为极大值； 当  $f’’(x_0)&gt;0$ 时， $f(x_0)$ 为极小值。 注：如果 $f’’(x_0)&lt;0$ ，此方法失效。</p>
+<h2 id="13-渐近线的求法"><a href="#13-渐近线的求法" class="headerlink" title="13. 渐近线的求法"></a>13. 渐近线的求法</h2><p>(1) 水平渐近线: 若 $\lim_{x \to + \infty}f(x)=b$，或 $\lim_{x \to - \infty}f(x)=b$，则 $y=b$ 称为函数 $y=f(x)$ 的水平渐近线。</p>
+<p>(2) 铅直渐近线: 若 $\lim_{x \to x_0^-}f(x)=\infty$，或 $\lim_{x \to x_0^+}f(x)=\infty$，则 $x=x_0$称为 $y=f(x)$ 的铅直渐近线。</p>
+<p>(3) 斜渐近线: 若 $a=\lim_{x \to \infty}\frac{f(x)}{x}, b=\lim_{x \to \infty}[f(x)-ax]$，则 $y=ax+b$ 称为 $y=f(x)$ 的斜渐近线。</p>
+<h2 id="14-函数凹凸性的判断"><a href="#14-函数凹凸性的判断" class="headerlink" title="14. 函数凹凸性的判断"></a>14. 函数凹凸性的判断</h2><p><strong>Th1:</strong>  凹凸性的判别定理: 若在$I$上 $f’’(x)&lt;0$（或 $f’’(x)&gt;0$），则 $f(x)$ 在 $I$ 上是凸的（或凹的）。</p>
+<p><strong>Th2:</strong>  拐点的判别定理 1: 若在 $x_0$ 处 $f’’(x)=0$，（或$f’’(x)$不存在），当 $x$ 变动经过 $x_0$ 时，$f’’(x)$ 变号，则 $(x_0,f(x_0))$ 为拐点。</p>
+<p><strong>Th3:</strong>  拐点的判别定理 2: 设 $f(x)$ 在 $x_0$ 点的某邻域内有三阶导数，且$f’’(x)=0, f’’’(x) \neq 0$，则 $(x_0,f(x_0))$ 为拐点。</p>
+<h2 id="15-弧微分"><a href="#15-弧微分" class="headerlink" title="15. 弧微分"></a>15. 弧微分</h2><p>$$dS = \sqrt{1+y’^2}dx$$</p>
+<h2 id="16-曲率，曲率半径"><a href="#16-曲率，曲率半径" class="headerlink" title="16. 曲率，曲率半径"></a>16. 曲率，曲率半径</h2><p>曲线在点 $M$ 处的曲率 $k(k \neq 0)$ 与曲线在点 $M$ 处的曲率半径 $rho$ 有如下关系：$\rho = \frac{1}{k}$。</p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/kolomomo/pic_repo/PicGo/travel/640"></p>
 ]]></content>
       <tags>
-        <tag>生活</tag>
-        <tag>个人</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>

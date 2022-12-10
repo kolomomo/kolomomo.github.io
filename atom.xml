@@ -6,7 +6,7 @@
   <link href="https://kolomomo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kolomomo.github.io/"/>
-  <updated>2022-11-23T09:47:40.796Z</updated>
+  <updated>2022-12-10T17:39:32.495Z</updated>
   <id>https://kolomomo.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>计划表</title>
-    <link href="https://kolomomo.github.io/2022/11/23/schedule/"/>
-    <id>https://kolomomo.github.io/2022/11/23/schedule/</id>
-    <published>2022-11-23T06:25:09.000Z</published>
-    <updated>2022-11-23T09:47:40.796Z</updated>
+    <title>高等数学基础整理</title>
+    <link href="https://kolomomo.github.io/2022/11/23/math-note/"/>
+    <id>https://kolomomo.github.io/2022/11/23/math-note/</id>
+    <published>2022-11-23T13:26:53.000Z</published>
+    <updated>2022-12-10T17:39:32.495Z</updated>
     
     
       
@@ -35,9 +35,7 @@
     
     
     
-    <category term="生活" scheme="https://kolomomo.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="个人" scheme="https://kolomomo.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
+    <category term="笔记" scheme="https://kolomomo.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
